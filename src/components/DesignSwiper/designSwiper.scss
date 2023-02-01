@@ -1,0 +1,17 @@
+.swiper-pagination-bullet{
+  width: calc(33.33333% - 10px);
+  border-radius: 10px;
+  height: 3px;
+}
+.swiper-pagination-bullet-active{
+  background: #BD7048;
+}
+.swiper-slide img{
+  border-radius: 15px;
+}
+.swiper-block img {
+  transition: 1s;
+  &:hover{
+    transform: scale(1.2);
+  }
+}

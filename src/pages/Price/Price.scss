@@ -1,0 +1,126 @@
+.price{
+  &__content{
+    display: flex;
+  }
+  &-layout{
+    width: 40%;
+    &__titleTop{
+      border-radius: 15px 0 0 15px;
+      padding: 27px 50px 27px;
+      background: #BD7048;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+      color: #FFFFFF;
+    }
+    &__info{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin-top: 34px;
+    }
+    &__title{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin: 30px 0;
+    }
+    &__item{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      list-style-type: disc;
+    }
+    &__priceBlock{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+      &-number{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #BD7048;
+      }
+    }
+    &__row{
+      display: flex;
+      align-items: center;
+      column-gap: 20px  ;
+    }
+    &__brown{
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+      background: #BD7048;
+      border-radius: 100px;
+      padding: 20px 40px;
+      cursor: pointer;
+      border: 2px solid #BD7048;
+      svg{
+        font-size: 25px;
+      }
+      transition: .8s;
+      &:hover{
+        background: white;
+        color: #BD7048;
+      }
+    }
+    &__btn{
+      background: #FFDBC9;
+      border-radius: 100px;
+      padding: 20px 35px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: #BD7048;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &-design{
+    width: 60%;
+    &__block{
+      padding-left: 70px;
+    }
+    &__titleTop{
+      border-radius: 0 15px 15px 0;
+      padding: 27px 50px 27px;
+      background: #DB916B;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 37px;
+      color: #FFFFFF;
+    }
+    &__info{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      span{
+        font-weight: 500;
+      }
+      a{
+        color: #BD7048;
+        border-bottom: 2px solid #BD7048;
+      }
+    }
+  }
+}
+
+.priceQuestion{
+  &__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #262626;
+  }
+}

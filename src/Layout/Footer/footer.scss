@@ -1,0 +1,82 @@
+.footer{
+  &-top{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    span{
+      color: #BD7048;
+    }
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+  }
+  &-nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &__item{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: rgba(59, 59, 59, 0.5);
+      &.active{
+        padding-bottom: 3px;
+        color: #BD7048;
+        border-bottom: 2px solid #BD7048;
+      }
+    }
+  }
+  &__politics{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(33, 33, 33, 0.5);
+  }
+  &-phone{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    &__number{
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: #3B3B3B;
+      position: relative;
+      &-icon{
+        position: absolute;
+        left: -20%;
+        font-size: 20px;
+      }
+    }
+    &__job{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: rgba(59, 59, 59, 0.5);
+    }
+  }
+
+  &-bottom{
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 40px 0;
+    background: #262626;
+  }
+}

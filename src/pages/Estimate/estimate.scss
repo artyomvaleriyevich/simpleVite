@@ -1,0 +1,35 @@
+    .block-profile {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #262626;
+        margin: 46px 0 28px;
+    }
+
+    &__btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #020202;
+    }
+
+    &__subtext {
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(38, 38, 38, 0.7);
+    }
+}
+.estimateBg{
+    background: url('../../images/Estimate/estimate.png') center/cover no-repeat;
+}

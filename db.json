@@ -1,0 +1,103 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "category": "livingRoom",
+      "titleCategory": "Гостиные",
+      "title": "Акварель",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 50000,
+      "imgOne": "./designImg/hotel/hotel1.png",
+      "imgTwo": "./designImg/hotel/hotel2.png",
+      "imgThree": "./designImg/hotel/hotel3.png"
+    },
+    {
+      "id": 2,
+      "category": "livingRoom",
+      "titleCategory": "Гостиные",
+      "title": "Кантри",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 20000,
+      "imgOne": "./designImg/hotel/hotel3.png",
+      "imgTwo": "./designImg/hotel/hotel1.png",
+      "imgThree": "./designImg/hotel/hotel2.png"
+    },
+    {
+      "id": 3,
+      "category": "livingRoom",
+      "titleCategory": "Гостиные",
+      "title": "Изотта",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 200000,
+      "imgOne": "./designImg/hotel/hotel2.png",
+      "imgTwo": "./designImg/hotel/hotel3.png",
+      "imgThree": "./designImg/hotel/hotel1.png"
+    },
+    {
+      "id": 4,
+      "category": "baby",
+      "titleCategory": "Детские",
+      "title": "Играй-ка",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 60000,
+      "imgOne": "./designImg/baby/baby1.png",
+      "imgTwo": "./designImg/baby/baby2.png",
+      "imgThree": "./designImg/baby/baby3.png"
+    },
+    {
+      "id": 5,
+      "category": "baby",
+      "titleCategory": "Детские",
+      "title": "Исскуство",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 30000,
+      "imgOne": "./designImg/baby/baby3.png",
+      "imgTwo": "./designImg/baby/baby1.png",
+      "imgThree": "./designImg/baby/baby2.png"
+    },
+    {
+      "id": 6,
+      "category": "baby",
+      "titleCategory": "Детские",
+      "title": "Дино",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 100000,
+      "imgOne": "./designImg/baby/baby2.png",
+      "imgTwo": "./designImg/baby/baby3.png",
+      "imgThree": "./designImg/baby/baby1.png"
+    },
+    {
+      "id": 7,
+      "category": "hallway",
+      "titleCategory": "Коридоры - прихожие",
+      "title": "Угловая",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 120000,
+      "imgOne": "./designImg/passerby/passerby1.png",
+      "imgTwo": "./designImg/passerby/passerby2.png",
+      "imgThree": "./designImg/passerby/passerby3.png"
+    },
+    {
+      "id": 8,
+      "category": "hallway",
+      "titleCategory": "Коридоры - прихожие",
+      "title": "Модульная",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 20000,
+      "imgOne": "./designImg/passerby/passerby3.png",
+      "imgTwo": "./designImg/passerby/passerby1.png",
+      "imgThree": "./designImg/passerby/passerby2.png"
+    },
+    {
+      "id": 9,
+      "category": "hallway",
+      "titleCategory": "Коридоры - прихожие",
+      "title": "Купе",
+      "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac consequat a, ligula consequat tellus. In tellus ultrices senectus nisl sit. ",
+      "price": 70000,
+      "imgOne": "./designImg/passerby/passerby2.png",
+      "imgTwo": "./designImg/passerby/passerby3.png",
+      "imgThree": "./designImg/passerby/passerby1.png"
+    }
+  ]
+}

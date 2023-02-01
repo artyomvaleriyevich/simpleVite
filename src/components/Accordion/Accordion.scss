@@ -1,0 +1,39 @@
+.question{
+  &__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #262626;
+    margin-bottom: 72px;
+  }
+  &-accordion{
+    margin-block: 34px;
+    &__block{
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      padding: 20px;
+      background: #00000015;
+      cursor: pointer;
+      border-radius: 100px;
+    }
+    &__svg{
+      transition: 1s;
+      font-size: 30px;
+      transform: rotate(315deg);
+      &.active{
+        color: #BD7048;
+        transform: rotate(0);
+        transition: 1s;
+      }
+    }
+    &__text{
+      margin-top: 34px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(38, 38, 38, 0.7);
+    }
+  }
+}

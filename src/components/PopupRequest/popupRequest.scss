@@ -1,0 +1,43 @@
+.popupRequest{
+  width: 500px;
+  border-radius: 60px;
+  background: white;
+  padding: 40px;
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__btn{
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      color: #BD7048;
+      transition: 0.3s;
+    }
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    &-label{
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #262626;
+      input{
+        border: 2px solid #BD7048;
+        height: 50px;
+        outline: none;
+        padding: 15px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,32 @@
+.swiper{
+  &-button-next{
+    background: white;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 15px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    right: -2%;
+    &:after{
+      font-size: 25px;
+      color: black;
+    }
+  }
+  &-button-prev{
+    background: white;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 15px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    left: -2%;
+    &:after{
+      font-size: 25px;
+      color: black;
+    }
+  }
+  &-slide{
+    opacity: 0.5;
+    &-active{
+      opacity: 1;
+    }
+  }
+}

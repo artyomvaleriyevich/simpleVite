@@ -1,0 +1,107 @@
+.catalog{
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #262626;
+    margin: 70px 0 30px;
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(38, 38, 38, 0.7);
+  }
+  &-block{
+    margin: 40px 0;
+    &__title{
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #262626;
+    }
+    &__titles{
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      white-space: nowrap;
+    }
+    &__line{
+      width: 100%;
+      height: 1px;
+      background: black;
+    }
+  }
+  &__row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-card{
+    width: calc(33.33333% - 30px);
+    border-radius: 15px;
+    padding: 20px 10px;
+    &:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    &__block{
+      margin-top: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 80px;
+    }
+    &__title{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #353535;
+    }
+    &__btn{
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #BD7048;
+      background: transparent;
+      border: none;
+      border-radius: 15px;
+      svg{
+        font-size: 30px;
+        color: black;
+      }
+    }
+  }
+  &__slide{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    width: calc(33.33333% - 20px);
+    &:hover{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+  }
+  &__link{
+    width: 100%;
+  }
+}
+.swiper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-button-next{
+    right: 7%;
+  }
+  &-button-prev{
+    left: 7%;
+  }
+  &-opacity{
+    opacity: 1;
+  }
+}
+

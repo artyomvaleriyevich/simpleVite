@@ -1,0 +1,50 @@
+.block-profile {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #262626;
+        margin: 46px 0 28px;
+    }
+
+    &__btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #020202;
+    }
+
+    &__subtext {
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(38, 38, 38, 0.7);
+    }
+}
+.block-info{
+    margin: 66px 0 54px;
+    &__title{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #262626;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(38, 38, 38, 0.7);}
+}
+.albumBg{
+    background: url('../../images/Album/album.png') center/cover no-repeat;
+}

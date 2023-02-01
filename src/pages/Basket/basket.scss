@@ -1,0 +1,118 @@
+.basket {
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #262626;
+        margin-bottom: 40px;
+    }
+
+    &__null {
+        text-align: center;
+        display: block;
+        height: 29.5vh;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 60px;
+    }
+
+    &__order {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    &-prices {
+        padding: 20px;
+        width: 40%;
+        background: #FFF6F1;
+        border-radius: 15px;
+        height: 100%;
+
+        &__title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+            color: #262626;
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #BD7048;
+
+            &-number {
+                color: rgba(55, 55, 55, 0.5);
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #BD7048;
+        }
+
+        img {
+            width: 120px;
+        }
+
+        column-gap: 35px;
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        width: 100%;
+        &__label{
+            width: 100%;
+        }
+        &__input{
+            padding: 18px;
+            width: 100%;
+            outline: none;
+            border-radius: 100px;
+            border: 1px solid #BD7048;
+            background: transparent;
+        }
+
+       
+
+    }
+
+}
