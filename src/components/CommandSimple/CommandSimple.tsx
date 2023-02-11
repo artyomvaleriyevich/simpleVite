@@ -1,16 +1,12 @@
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
 import imgSwiper from '../../images/AboutImg/commandSimple/swiper.png'
 import sls from './commandSimple.module.scss'
 import './commandSipmleSwiper.scss'
-// import required modules
 import { Navigation } from "swiper";
-
 export default function CommandSimple() {
     return (
         <>

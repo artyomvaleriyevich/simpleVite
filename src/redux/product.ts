@@ -2,7 +2,6 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "../axios";
 
 
-
 export const getProduct = createAsyncThunk<{  [key: string]: string | number; },number>(
     'product/getProduct',
     async (id,{rejectWithValue}) =>{
@@ -20,7 +19,7 @@ export const getProduct = createAsyncThunk<{  [key: string]: string | number; },
 )
 
 
-type  ProductSliceType = {
+interface  IProductSlice  {
     status: string,
     product: {
         category?: string,
@@ -35,7 +34,7 @@ type  ProductSliceType = {
     },
 }
 
-const initialState: ProductSliceType = {
+const initialState: IProductSlice = {
     status:'',
     product: {},
 };
@@ -59,10 +58,6 @@ const productSlice = createSlice({
             })
     }})
 
-
-
-
-export const {} = productSlice.actions
 export default productSlice.reducer
 
 

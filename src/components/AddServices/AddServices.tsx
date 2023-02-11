@@ -1,17 +1,11 @@
 import React from 'react';
 import './addServices.scss'
 import {NavLink} from "react-router-dom";
-
-
 import imgTender from '../../images/AddServices/tender.png'
 import imgEstimate from '../../images/AddServices/smeta.png'
 import imgAlbum from '../../images/AddServices/albom.png'
-// @ts-ignore
 import { animateScroll as scroll} from 'react-scroll'
-
-
 const AddServices = () => {
-
     return (
         <section className='addServices'>
             <div className="container">

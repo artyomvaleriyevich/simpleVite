@@ -1,14 +1,11 @@
 import React, {useState} from 'react';
 import {SlClose} from "react-icons/sl";
 import './Accordion.scss'
-
 const Accordion = () => {
-
     const [expanded,setExpanded] = useState(false)
     const [expanded2,setExpanded2] = useState(false)
     const [expanded3,setExpanded3] = useState(false)
     const [expanded4,setExpanded4] = useState(false)
-
     return (
         <div>
             <div className="question-accordion">

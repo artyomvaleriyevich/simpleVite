@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import DesignSwiper from "../DesignSwiper/DesignSwiper";
-
 import {HiOutlineShoppingBag} from "react-icons/hi";
 import {useAppDispatch} from "../../store";
 import {getAllProduct} from "../../redux/allProduct";

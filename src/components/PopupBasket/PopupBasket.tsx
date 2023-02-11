@@ -6,8 +6,6 @@ import {toast} from "react-toastify";
 import {Link} from "react-router-dom";
 import {GrClose} from 'react-icons/gr'
 import {useSelector} from "react-redux";
-
-
 const PopupBasket = () => {
     const dispatch = useAppDispatch()
 

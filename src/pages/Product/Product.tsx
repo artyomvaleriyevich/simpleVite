@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import './product.scss'
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import AddServices from "../../components/AddServices/AddServices";
@@ -7,12 +7,11 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../store";
 import { getProduct } from "../../redux/product";
-
-
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addProduct } from "../../redux/basket";
-import { ItemType } from 'type/item';
+import { ItemType } from '../../type/item';
+import fileDow from './file.pdf'
 
 
 type ID = {
@@ -20,21 +19,17 @@ type ID = {
 }
 
 const Product = () => {
-    
     const dispatch = useAppDispatch()
     const { id } = useParams() as ID
     const { product } = useSelector((s: RootState) => s.product)
     const { order } = useSelector((s: RootState) => s.basket)
-    const [disabledBtn, setDisabledBtn] = useState(false)
+
     useEffect(() => {
         if (id) dispatch(getProduct(id))
-    
     },[])
-    useEffect(()=>{
-        order.map((item:ItemType) => product.id === item.id ? setDisabledBtn(true) : setDisabledBtn(false))
-    })
-    
-  
+
+
+    let disBtn = order.findIndex((item: ItemType) => {return item.id === product.id}) > -1
 
     return (
         <div className='itemCard'>
@@ -47,7 +42,7 @@ const Product = () => {
                         <h2 className="itemCard-info__title"> {product.title}</h2>
                         <p className="itemCard-info__text"> {product.info}</p>
                         <div>
-                            <button style={{ background: disabledBtn ? '#BD704880' : '#BD7048' }} disabled={disabledBtn} onClick={() => {
+                            <button style={{background: disBtn ? '#BD704860' : '#BD7048'}}  disabled={disBtn} onClick={() => {
                                 dispatch(addProduct({ ...product }))
                                 toast(`Товар был добавлен, Кол-во ${order.length + 1}`)
                             }} type={'button'} className="itemCard-info__btn itemCard-info__btn-block">
@@ -84,7 +79,7 @@ const Product = () => {
                         </span>
                         <div className="block-profile__textBlock">
                             <h4 className="block-profile__text">Смотреть пример</h4>
-                            <a href={''} className="block-profile__subtext">Pdf 2,5 Мб</a>
+                            <a href={fileDow} download className="block-profile__subtext">Pdf 2,5 Мб</a>
                         </div>
                     </a>
                 </div>

@@ -36,6 +36,10 @@
         outline: none;
         padding: 15px;
         border-radius: 20px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
       }
     }
   }

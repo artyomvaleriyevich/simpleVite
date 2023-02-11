@@ -1,9 +1,6 @@
 import './header.scss'
 import {Link, NavLink} from "react-router-dom";
 import {BsTelephone} from "react-icons/bs";
-
-
-
 const Header = () => {
 
     return (

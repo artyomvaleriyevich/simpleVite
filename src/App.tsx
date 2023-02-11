@@ -12,6 +12,7 @@ import Catalog from "./pages/Catalog/Catalog";
 import Product from "./pages/Product/Product";
 import Basket from "./pages/Basket/Basket";
 
+
 function App() {
   return (
     <div className="App">

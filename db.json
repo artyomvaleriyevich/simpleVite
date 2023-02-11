@@ -99,5 +99,22 @@
       "imgTwo": "./designImg/passerby/passerby3.png",
       "imgThree": "./designImg/passerby/passerby1.png"
     }
+  ],
+  "request": [
+    {
+      "name": "Artyom",
+      "email": "asdasd@gmail.com",
+      "tel": 996555362034,
+      "id": 1
+    },
+    {
+      "namePequest": "asdasd",
+      "emailRequest": "asdasd@asdasd.asdasd",
+      "phoneRequest": "123123123",
+      "id": 2
+    }
+  ],
+  "application": [
+  
   ]
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import './itemCardSwiper.scss'
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation} from "swiper";

@@ -1,0 +1,39 @@
+@media (max-width: 1200px) {
+    .works__imageBig{
+      width: 55%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .consultation-basket{
+      width: 420px;
+    }
+    .consultation__title{
+      font-size: 33px;
+    }
+    .works__title {
+        font-size: 36px;
+    }
+    .works__imageBig {
+        width: 50%;
+    }
+    .works-card__title{
+        font-size: 19px;
+    }
+    .works-card__info{
+        font-size: 16px;
+    }
+    .services-layout__button{
+        white-space: nowrap;
+    }
+    .design__subtitle{
+        font-size: 19px;
+    }
+    .design-card__block{
+        column-gap: normal;
+    }
+  }
+
+  @media (max-width: 992px){
+    
+  }

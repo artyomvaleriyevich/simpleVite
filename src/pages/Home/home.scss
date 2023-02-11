@@ -244,10 +244,11 @@
     top:0;
     transform: translateY(-60%);
     right: 0;
+    width: 100%;
   }
 }
 .repair{
-  padding: 70px;
+  padding: 70px 0 ;
   &-row{
     display: flex;
     justify-content: space-between;

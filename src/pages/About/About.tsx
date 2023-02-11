@@ -1,13 +1,8 @@
 import './About.scss'
-import React from 'react';
 import imgCommand from '../../images/AboutImg/command/bg.png'
 import imgDesign from '../../images/homeImg/aboutDesign/im.png'
 import CommandSimple from "../../components/CommandSimple/CommandSimple";
-
-
 import imgUser from '../../images/AboutImg/user/user.png'
-import ReactPlayer from 'react-player'
-
 
 const About = () => {
     return (

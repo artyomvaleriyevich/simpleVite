@@ -3,8 +3,6 @@ import {SwiperSlide,Swiper} from "swiper/react";
 import 'swiper/css'
 import "swiper/css/pagination";
 import './designSwiper.scss'
-
-
 import { Pagination, Autoplay} from "swiper";
 
 interface DesignSwiperProps {
@@ -26,6 +24,7 @@ const DesignSwiper = ({imgOne,imgTwo,imgThree,delay}:DesignSwiperProps) => {
                  disableOnInteraction: false,
              }}
              speed={800}
+             loop={true}
          >
              <SwiperSlide className={'swiper-block'}>
                  <img src={imgOne} alt=""/>

@@ -1,10 +1,9 @@
-import React from 'react';
+
 import './Price.scss'
 import Accordion from "../../components/Accordion/Accordion";
 import AddServices from "../../components/AddServices/AddServices";
 import {HiOutlineShoppingBag} from 'react-icons/hi'
 import {Link, NavLink} from "react-router-dom";
-
 const Price = () => {
     return (
         <>

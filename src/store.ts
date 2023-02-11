@@ -1,6 +1,12 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import {useDispatch} from "react-redux";
 import storage from 'redux-persist/lib/storage'
+
+import allProduct from "./redux/allProduct";
+import product from "./redux/product";
+import basket from './redux/basket'
+
+
 import {
     persistReducer,
     persistStore,
@@ -13,15 +19,12 @@ import {
 } from 'redux-persist'
 
 
-import allProduct from "./redux/allProduct";
-import product from "./redux/product";
-import basket from './redux/basket'
 
 
 const rootReducer = combineReducers({
     allProduct,
     product,
-    basket
+    basket,
 })
 
 const persistConfig = {

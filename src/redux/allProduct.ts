@@ -1,4 +1,4 @@
-import {createAsyncThunk, createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "../axios";
 
 export const getAllProduct = createAsyncThunk(
@@ -48,10 +48,6 @@ const allProductSlice = createSlice({
 
 }})
 
-
-
-
-export const {} = allProductSlice.actions
 export default allProductSlice.reducer
 
 

@@ -1,17 +1,15 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import './catalog.scss';
 import sls from './catalog.module.scss'
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 import {Navigation} from "swiper";
 import CatalogCard from "./CatalogCard";
 import {RootState, useAppDispatch} from "../../store";
 import {getAllProduct} from "../../redux/allProduct";
 import {useSelector} from "react-redux";
-import { ItemType } from 'type/item';
-
-
+import { ItemType } from '../../type/item';
 
 const Catalog = () => {
 
@@ -40,21 +38,17 @@ const Catalog = () => {
               </div>
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={40}
-
-                        pagination={{
-                            clickable: true,
-                        }}
+                        spaceBetween={30}
                         loop={true}
                         navigation={true}
                         modules={[Navigation]}
                         className={`mySwiper ${sls.swiper}`}
                     >
-                       {
-                        product.map((item:ItemType) => item.category === 'livingRoom' ?  <CatalogCard item={item}/>  : '')
-                       }
-                    </Swiper>
-
+                
+                     {
+                        product.map((item:ItemType) => item.category === 'livingRoom' ?  <SwiperSlide className='catalog__slide swiper-opacity'> <CatalogCard item={item}/></SwiperSlide>  : '')
+                     }
+                     </Swiper>
             </div>
 
             <div className="catalog-block">
@@ -67,17 +61,14 @@ const Catalog = () => {
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={40}
-                    pagination={{
-                        clickable: true,
-                    }}
                     loop={true}
                     navigation={true}
                     modules={[Navigation]}
                     className={`mySwiper ${sls.swiper}`}
                 >
-{
-                        product.map((item:ItemType) => item.category === 'baby' ?  <CatalogCard item={item}/>  : '')
-                       }
+ {
+                        product.map((item:ItemType) => item.category === 'baby' ?  <SwiperSlide className='catalog__slide swiper-opacity'> <CatalogCard item={item}/></SwiperSlide>  : '')
+                     }
                 </Swiper>
 
             </div>
@@ -92,17 +83,14 @@ const Catalog = () => {
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={40}
-                    pagination={{
-                        clickable: true,
-                    }}
                     loop={true}
                     navigation={true}
                     modules={[Navigation]}
                     className={`mySwiper ${sls.swiper}`}
                 >
-{
-                        product.map((item:ItemType) => item.category === 'hallway' ?  <CatalogCard item={item}/>  : '')
-                       }
+                    {
+                        product.map((item:ItemType) => item.category === 'hallway' ?  <SwiperSlide className='catalog__slide swiper-opacity'> <CatalogCard item={item}/></SwiperSlide>  : '')
+                     }
                 </Swiper>
 
             </div>

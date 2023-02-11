@@ -1,6 +1,6 @@
 import CatalogCardImg from "../../components/CatalogCardImg/CatalogCardImg";
 import {HiOutlineShoppingBag} from "react-icons/hi";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {SwiperSlide } from "swiper/react";
 import './catalog.scss'
 import { animateScroll as scroll} from 'react-scroll'
@@ -18,10 +18,9 @@ type ItemType = {
     imgThree: string
  }
 }
-const CatalogCard = ({item}:ItemType ) => {
+const CatalogCard = ({item}:ItemType, ) => {
 
     return (
-        <SwiperSlide className={'catalog__slide swiper-opacity'}>
         <Link onClick={()=> scroll.scrollToTop()} className="catalog__link" to={`/product/${item.id}`} >
         <CatalogCardImg imgOne={item.imgOne} imgTwo={item.imgTwo} imgThree={item.imgThree} delay={3000}/>
         <div className="catalog-card__block">
@@ -32,7 +31,6 @@ const CatalogCard = ({item}:ItemType ) => {
             </button>
         </div>
         </Link>
-    </SwiperSlide>
     );
 };
 

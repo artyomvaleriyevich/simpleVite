@@ -2,7 +2,6 @@ import './footer.scss'
 import {NavLink} from "react-router-dom";
 import {BsTelephone} from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
-
 const Footer = () => {
 
     return (

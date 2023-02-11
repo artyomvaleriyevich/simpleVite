@@ -1,8 +1,6 @@
-import React from 'react';
+
 import './notFound.scss'
 import {NavLink} from "react-router-dom";
-
-
 const NotFound = () => {
 
     return (

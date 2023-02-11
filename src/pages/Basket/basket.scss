@@ -110,9 +110,17 @@
             border: 1px solid #BD7048;
             background: transparent;
         }
-
-       
-
+        &__btn{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+            padding: 28px 45px;
+            background: #BD7048;
+            border-radius: 100px;
+            border: 2px solid #BD7048;
+            cursor: pointer;
+        }
     }
 
 }

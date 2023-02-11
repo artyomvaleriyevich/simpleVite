@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react';
 import { NavLink } from "react-router-dom";
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { VscFilePdf } from 'react-icons/vsc'
-// @ts-ignore
 import { animateScroll as scroll } from "react-scroll";
 import Accordion from "../../components/Accordion/Accordion";
 import './home.scss'
@@ -17,6 +16,8 @@ import { ItemType } from "../../type/item";
 import PopupBasket from "../../components/PopupBasket/PopupBasket";
 import { openPopupBasket } from "../../redux/basket";
 import PopupRequest from "../../components/PopupRequest/PopupRequest";
+import fileDow from './file.pdf'
+
 const Home = () => {
     const dispatch = useAppDispatch()
     useEffect(() => {
@@ -130,11 +131,11 @@ const Home = () => {
                             </ul>
 
                             <div className="services-layout__btns">
-                                <button onClick={()=>setStatusRequest(true)} className="btn__brown">Оставить заявку</button>
-                                <button className="services-layout__btn">
+                                <button onClick={()=>setStatusRequest(true)} className="btn__brown services-layout__button">Оставить заявку</button>
+                                <a href={fileDow} download className="services-layout__btn">
                                     <VscFilePdf />
                                     Посмотреть пример
-                                </button>
+                                </a>
                             </div>
 
                         </div>
@@ -166,11 +167,11 @@ const Home = () => {
                             </ul>
 
                             <div className="services-layout__btns">
-                                <button onClick={()=>setStatusRequest(true)} className="btn__brown">Оставить заявку</button>
-                                <button className="services-layout__btn">
+                                <button onClick={()=>setStatusRequest(true)} className="btn__brown services-layout__button">Оставить заявку</button>
+                                <a  href={fileDow} download className="services-layout__btn">
                                     <VscFilePdf />
                                     Посмотреть пример
-                                </button>
+                                </a>
                             </div>
 
                         </div>
@@ -210,8 +211,9 @@ const Home = () => {
 
                         <div className="design-block__row">
                             {
-                                product.map((item: ItemType) => {
-                                    if (item.category === "livingRoom") {
+                                product.map((item: ItemType,idx) => {
+            
+                                    if (item.category === "livingRoom" && idx < 3) {
                                         return <CardProduct key={item.id} item={item} />
                                     }
                                 })
@@ -228,8 +230,8 @@ const Home = () => {
                         <div className="design-block__row">
 
                             {
-                                product.map((item: ItemType) => {
-                                    if (item.category === "baby") {
+                                product.map((item: ItemType, idx) => {
+                                    if (item.category === "baby" && idx < 6) {
                                         return <CardProduct key={item.id} item={item} />
                                     }
                                 })
@@ -248,8 +250,8 @@ const Home = () => {
                         <div className="design-block__row">
 
                             {
-                                product.map((item: ItemType) => {
-                                    if (item.category === "hallway") {
+                                product.map((item: ItemType, idx) => {
+                                    if (item.category === "hallway" && idx < 9) {
                                         return <CardProduct key={item.id} item={item} />
                                     }
                                 })

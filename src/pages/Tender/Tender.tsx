@@ -1,10 +1,7 @@
 import './tender.scss'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import AddServices from '../../components/AddServices/AddServices';
-import React from "react";
-
-
-
+import { Link } from 'react-router-dom';
 const Tender = () => {
     return (
         <>
@@ -18,11 +15,10 @@ const Tender = () => {
                     <p className="tender__info">Мы отправим ваш проект проверенным строительным бригадам, которые сделают расчёт. Если у вас на примете есть строители, наш специалист по техническому надзору проедет на их стройки и проверит качество работы, а после даст вам своё заключение.</p>
                     <div className="tender__row">
                         <div className="tender__block">
-                            <button className="tender__brown">
+                        <Link to={'/basket'} className="tender__brown">
                                 <HiOutlineShoppingBag />
                                 В корзину
-                            </button>
-                            <button className="tender__btn">Купить</button>
+                            </Link>
                         </div>
                         <div className="tender__block">
                             <p className="tender__text">Стоимость услуги:</p>
